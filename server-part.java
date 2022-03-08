@@ -25,12 +25,12 @@ catch(Exception e){
 }
 }
 static int verif(int tab[]){       // fonction du recherche d'un element dans un tableau
-    boolean bool ; 
+    int res ; 
     for(int i = 0 ; i<tab.length ; i++){
         for ( int j = i ; j < tab.length ; j++){
             if(tab[i]==tab[j])
-                {bool = true ;} 
-            else {bool = false ; }
+                {res = 1 ;} 
+            else {res = 0; }
         }
     }
-    return bool ; }
+    return res ; }
